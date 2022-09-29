@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<app:BasePage
+    x:Class="MauiMvvmExample.Views.ItemDetailPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:app="clr-namespace:MauiMvvmExample"
+    xmlns:vm="clr-namespace:MauiMvvmExample.ViewModels"
+    Title="{Binding Title}"
+    x:DataType="vm:ItemDetailViewModel">
+
+    <StackLayout Padding="15" Spacing="20">
+        <Label FontSize="Medium" Text="Text:" />
+        <Label FontSize="Small" Text="{Binding Text}" />
+        <Label FontSize="Medium" Text="Description:" />
+        <Label FontSize="Small" Text="{Binding Description}" />
+    </StackLayout>
+
+</app:BasePage>
